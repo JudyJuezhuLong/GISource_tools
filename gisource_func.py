@@ -133,9 +133,9 @@ def weChat(type_position=False,Country_CN='',University_CN='',direction='',deadl
     
     if len(deadline_ls)==3:
         if this_year==deadline_ls[0]:
-            my_str = my_str +str(int(deadline_ls[1]))+'月'+deadline_ls[2]+'日'+'截止申请, '
+            my_str = my_str +str(int(deadline_ls[1]))+'月'+str(int(deadline_ls[2]))+'日'+'截止申请, '
         else:
-            my_str = my_str +deadline_ls[0]+'年'+deadline_ls[1]+'月'+deadline_ls[2]+'日'+'截止申请, '
+            my_str = my_str +deadline_ls[0]+'年'+str(int(deadline_ls[1]))+'月'+str(int(deadline_ls[2]))+'日'+'截止申请, '
     else:
         my_str = my_str + '尽快申请, '
         
