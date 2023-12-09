@@ -89,7 +89,7 @@ def dataBase(type_position = False,University_CN='',University_EN='',Country_CN=
 def dataBase_SQL_insert(University_CN='',University_EN='',Country_CN='',Country_EN='',Job_EN='',Job_CN='',Title_EN='',Title_CN=''):
     Date=getUtcDate()[:10]
     my_str = '\nUSE TEST;'
-    my_str = my_str + '\nINSERT INTO GISource (University_CN,University_EN,Country_CN,Country_EN,Job_CN,Job_EN,Title_CN,Title_EN,Date)'
+    my_str = my_str + '\nINSERT INTO TEST.GISource (University_CN,University_EN,Country_CN,Country_EN,Job_CN,Job_EN,Title_CN,Title_EN,Date)'
     if '\'' in Job_EN:
         Job_EN = Job_EN.replace('\'', '\\\'' )
         Title_EN = Title_EN.replace('\'', '\\\'' )
